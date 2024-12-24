@@ -1,0 +1,155 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+
+.solution {
+    background-image: url("../images/design/solution-img.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    img {
+        width: 250px;
+        padding-bottom: 40px;
+
+        @media(min-width: 768px)
+        {
+            width: 300px;
+            padding: unset;
+        }
+
+        @media (min-width: 1024px) 
+        {
+            width: 400px;
+        }
+
+        @media (min-width: 1920px) 
+        {
+            width: 607px;
+        }
+    }
+
+    .solution-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .solution-content-head {
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 30px;
+            text-align: center;
+
+            span {
+                color: $purple;
+            }
+
+            @media(min-width: 425px)
+            {
+                font-size: 37px;
+            }
+
+            @media(min-width: 768px)
+            {
+                font-size: 32px;
+                text-align: left;
+            }
+
+            @media(min-width: 1440px)
+            {
+                font-size: 45px;
+            }
+
+            @media(min-width: 1920px)
+            {
+                font-size: 55px;
+            }
+        }
+
+        .btn {
+            background-color: $yellow;
+            font-weight: 500;
+            border-radius: 4px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @media (min-width: 1440px) {
+                font-size: 20px;
+            }
+
+            @media (min-width: 1920px) {
+                font-size: 24px;
+            }
+        }
+
+        .btn:hover {
+            background-color: $black;
+            color: $white;
+        }
+
+        .solution-content-text {
+            margin-bottom: 30px;
+            color: $grey;
+
+            @media (min-width: 768px)
+            {
+                font-size: 17px;
+            }
+
+        }
+
+        
+
+        @media (min-width: 768px)
+        {
+            align-items: flex-start;
+        }
+    }
+
+    @media(min-width: 768px)
+    {
+        flex-direction: row-reverse;
+        gap: 22px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+
+    @media(min-width: 1024px)
+    {
+        gap: 10px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+
+    @media(min-width: 1440px)
+    {
+        gap: 44px;
+        padding-left: 250px;
+        padding-right: 250px;
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+
+    @media(min-width: 1920px)
+    {
+        gap: 47px;
+        padding-left: 333px;
+        padding-right: 333px;
+        padding-top: 98px;
+        padding-bottom: 98px;
+    }
+}

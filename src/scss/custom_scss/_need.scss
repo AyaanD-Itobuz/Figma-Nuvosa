@@ -1,0 +1,265 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+
+.need {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .need-head {
+
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 500;
+
+            p {
+                display: inline-block;
+                span {
+                    color: $purple;
+                }
+            }
+            
+
+            @media(min-width: 768px)
+            {
+                font-size: 26px;
+            }
+
+            @media(min-width: 1024px)
+            {
+                width: 43%;
+                font-size: 30px;
+                text-align: left;
+                margin-left: auto;
+                margin-bottom: unset;
+            } 
+            
+            @media(min-width: 1440px)
+            {
+                width: 47%;
+                font-size: 40px;
+                padding-bottom: 10px;
+            }
+
+            @media(min-width: 1680px)
+            {
+                width: 44%;
+                font-size: 46px;
+                // padding-bottom: 30px;
+            }
+
+            @media(min-width: 1920px)
+            {
+                width: 46%;
+                padding-bottom: 20px;
+                font-size: 55px;
+            }
+        }
+    }
+
+    .need-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .need-body-img {
+            img {
+                width: 250px;
+                margin-bottom: 30px;
+
+                @media(min-width: 375px)
+                {
+                    width: 350px;
+                }
+
+                @media(min-width: 768px)
+                {
+                    width: 450px;
+                }
+
+                @media(min-width: 1024px)
+                {
+                    width: 490px;
+                }
+
+                @media(min-width: 1440px)
+                {
+                    width: 590px;
+                }
+
+                @media (min-width: 1680px) {
+                    width: 680px;
+                }
+
+                @media(min-width: 1920px)
+                {
+                    width: 770px;
+                }
+            }
+
+            
+        }
+
+        .need-body-content {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            p {
+                color: $grey;
+                margin: unset;
+
+                @media(min-width: 1440px)
+                {
+                    font-size: 17px;
+                }
+            }
+            
+            .need-body-content-cards {
+                gap: 20px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .card {
+                    padding: 16px;
+                    gap: 30px;
+                    flex-direction: column;
+                    
+                    border-color: $white;
+    
+                    h5 {
+                        @media(min-width: 1024px)
+                        {
+                            font-size: 23px;
+                        }
+                    }
+    
+                    p {
+                        color: $grey;
+    
+                        @media(min-width: 1024px)
+                        {
+                            font-size: 17px;
+                        }
+                    }
+                    
+                    @media (min-width: 768px)
+                    {
+                        width: 40%;
+                    }
+
+                    @media (min-width: 1024px)
+                    {
+                        width: 100%;
+                        flex-direction: row;
+                        gap: 20px;
+
+                    }
+
+                    @media (min-width: 1440px)
+                    {
+                        gap: 23px;
+                        
+                    }
+
+                    @media(min-width: 1920px)
+                    {
+                        width: 74%;
+                        
+                    }
+                }
+    
+                .card:hover {
+                    transform: scale(1.01);
+                    box-shadow: 0px 9px 17px -8px $grey;
+                }
+    
+                img {
+                    width: 60px;
+
+                    @media (min-width: 1024px)
+                    {
+                        width: 70px;
+                    }
+
+                    @media (min-width: 1440px)
+                    {
+                        width: 80px;
+                    }
+
+                    @media (min-width: 1920px)
+                    {
+                        width: 101px;
+                    }
+                }
+
+                @media(min-width: 768px) 
+                {
+                    // width: 40%;
+                    flex-direction: row ;
+                    flex-wrap: wrap ;
+                }
+
+                @media(min-width: 1024px) 
+                {
+                    // width: 40%;
+                    flex-direction: column ;
+                    flex-wrap: wrap ;
+                }
+
+                @media (min-width: 1920px)
+                {
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+            }
+            
+        }
+
+        @media(min-width: 1024px)
+        {
+            flex-direction: row;
+            gap: 60px;
+        }
+
+        @media (min-width: 1440px) {
+            
+            gap: 45px;
+        }
+
+        @media (min-width: 1680px) {
+            
+            gap: 120px;
+        }
+
+        @media (min-width: 1920px) {
+            
+            gap: 120px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        padding-left: 120px;
+        padding-right: 130px;
+        padding-top: 80px;
+        margin-top: unset;
+    }
+
+    @media (min-width: 1680px) {
+        padding-left: 120px;
+        padding-right: 130px;
+        padding-top: 90px;
+    }
+
+    @media (min-width: 1920px) {
+        padding-left: 130px;
+        padding-right: 143px;
+        padding-top: 114px;
+        gap: 120px;
+    }
+}

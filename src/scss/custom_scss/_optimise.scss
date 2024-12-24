@@ -1,0 +1,206 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+
+.optimise {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: left;
+
+    .optimise-head {
+        flex-direction: column;
+        
+        .optimise-head-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            p {
+                margin: unset;
+            }
+            span {
+                color: $purple;
+            }
+
+            @media (min-width: 375px) 
+            {
+                font-size: 25px;    
+            }
+
+            @media (min-width: 768px) 
+            {
+                font-size: 30px;    
+            }
+
+            @media (min-width: 1440px) 
+            {
+                font-size: 40px;  
+                margin-bottom: 20px;  
+            }
+
+            @media (min-width: 1920px) 
+            {
+                font-size: 55px;  
+                margin-bottom: 37px;  
+            }
+        }
+
+        .optimise-head-text {
+            p {
+                color: #727272;
+                @media(min-width: 768px)
+                {
+                    width: 85%;
+                }
+
+                @media(min-width: 1024px)
+                {
+                    width: 63%;
+                }
+
+                @media(min-width: 1440px)
+                {
+                    width: 56%;
+                    font-size: 20px;
+                }
+
+                @media(min-width: 1920px)
+                {
+                    width: 45%;
+                }
+            }
+        }
+    }
+
+    .optimise-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        gap: 20px;
+        img {
+            width: 60px;
+            @media(min-width: 1920px)
+            {
+                width: 74px;
+            }
+        }
+
+        span {
+            position: absolute;
+            font-size: 229px;
+            color: #FAFAFF;
+            right: 0px;
+        }
+
+        .card {
+            padding: 16px;
+            width: 227px;
+            border: none;
+            border-bottom: 3px solid $white;
+            border-radius: 0;
+            cursor: pointer;
+
+            @media(min-width: 1440px) 
+            {
+                width: 300px;
+                padding: 20px;
+                padding-top: 36px;
+                padding-bottom: 62px;
+            }
+
+            @media (min-width: 1920px)
+            {
+                padding: 34px;
+                padding-top: 56px;
+                padding-bottom: 92px;
+                width: 400px;
+            }
+        }
+
+        .optimise-body-research:hover {
+            border-color: #D38094;
+            transform: scale(1.01);
+            box-shadow: 1px 6px 10px -8px black;
+        }
+
+        .optimise-body-content:hover {
+            border-color: #80D3A4;
+            transform: scale(1.01);
+            box-shadow: 1px 6px 10px -8px black;
+        }
+
+        .optimise-body-target:hover {
+            border-color: #60C2F8;
+            transform: scale(1.01);
+            box-shadow: 1px 6px 10px -8px black;
+        }
+
+        .optimise-body-testing:hover {
+            border-color: $purple;
+            transform: scale(1.01);
+            box-shadow: 1px 6px 10px -8px black;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            z-index: 1;
+
+            @media(min-width: 1440px)
+            {
+                font-size: 20px;
+                margin-top: 70px;
+            }
+
+            @media(min-width: 1920px)
+            {
+                font-size: 24px;
+                margin-top: 90px;
+                margin-bottom: 21px;
+            }
+        }
+
+        .card-text {
+            color: $grey;
+            z-index: 1;
+            @media(min-width: 1440px)
+            {
+                font-size: 17px;
+            }
+        }
+
+        @media(min-width: 768px)
+        {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        @media(min-width: 1024px)
+        {
+            gap: 17px;
+        }
+
+        @media(min-width: 1920px)
+        {
+            gap: 22px;
+        }
+    }
+
+    @media(min-width: 1440px)
+    {
+        padding-left: 62px;
+    }
+
+    @media(min-width: 1920px)
+    {
+        padding-left: 127px;
+        padding-right: 127px;
+    }
+}

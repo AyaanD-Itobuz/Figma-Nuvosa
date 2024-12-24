@@ -1,0 +1,109 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+$light-grey : #E1E1E1 ;
+$dark-grey : #666565;
+
+.numbers {
+    flex-wrap: wrap;
+    border: 1px solid $light-grey;
+    border-radius: 4px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 16px;
+    gap: 30px ;
+    justify-content: center;
+    align-items: center;
+    // padding-right: 10px;
+    
+
+    .numbers-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+
+        // color: $dark-grey;
+        p {
+            font-size: 35px;
+            font-weight: 600;
+            margin: unset;
+            color: $dark-grey;
+
+            @media (min-width : 1024px) {
+                font-size: 40px;
+            }
+
+            @media (min-width : 1440px) {
+                font-size: 50px;
+            }
+
+            @media (min-width: 1680px)
+            {
+                font-size: 73px;
+            }
+        }
+
+        span {
+            color: $dark-grey;
+
+            @media (min-width : 1024px) {
+                font-size: 17px;
+            }
+        }
+
+        .numbers-box-content {
+            text-align: center;
+        }
+
+        @media(min-width: 768px)
+        {
+            width: 28%;
+        }
+
+        @media(min-width: 1024px)
+        {
+            width: 24%;
+            
+        }
+
+        @media(min-width: 1440px)
+        {
+            width: 24%;
+        }
+
+        @media (min-width: 1680px)
+        {
+            gap: 50px;
+        }
+    }
+    @media(min-width: 1024px)
+    {
+        gap: 10px;
+        width: 77%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    @media(min-width: 1440px)
+    {
+        width: 60%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media(min-width: 1680px)
+    {
+        width: 1165px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+}

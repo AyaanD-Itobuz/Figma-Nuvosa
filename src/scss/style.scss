@@ -1,0 +1,25 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    color: $black;
+}
+
+@import "./custom_scss/_navbar.scss" ;
+@import "./custom_scss/_hero.scss" ;
+@import "./custom_scss/_services.scss" ;
+@import "./custom_scss/_optimise.scss" ;
+@import "./custom_scss/_solution.scss" ;
+@import "./custom_scss/_quality.scss" ;
+@import "./custom_scss/_choose.scss" ;
+@import "./custom_scss/need" ;
+@import "./custom_scss/numbers" ;
+@import "./custom_scss/speed" ;
+

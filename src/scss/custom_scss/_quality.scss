@@ -1,0 +1,94 @@
+$purple : #6F77F1 ;
+$black : #212528 ;
+$white : #FFFFFF ;
+$yellow : #FAD725 ;
+$grey : #828282 ;
+
+
+.quality {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 60px;
+
+        @media(min-width: 1440px)
+        {
+            width: 71px;
+        }
+    }
+
+    .card {
+        padding: 16px;
+        width: 256px;
+        border-color: $white;
+        cursor: pointer;
+
+        @media(min-width: 1440px)
+        {
+            width: 370px;
+            padding-top: 34px;
+            padding-bottom: 26px;
+            padding-left: 30px;
+            padding-right: 48px;
+        }
+    }
+
+    .card:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 9px 17px -8px $grey;
+    }
+
+    h5 {
+        margin-top: 22px;
+        margin-bottom: 17px; 
+        font-weight: 500;
+
+        @media (min-width: 1440px) {
+            font-size: 22px;
+        }
+    }
+
+    p {
+        color: $grey;
+        margin-bottom: 11px;
+
+        @media(min-width: 1440px)
+        {
+            font-size: 17px;
+        }
+    }
+
+    span {
+        font-size: 14px;
+        color: $purple;
+        cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media (min-width: 1440px) {
+        gap: 30px;
+        margin-top: 100px;
+        margin-bottom: 84px;
+        padding-left: 115px;
+        padding-right: 115px;
+    }
+
+    @media (min-width: 1920px) {
+        gap: 75px;
+        padding-left: 330px;
+        padding-right: 330px;
+    }
+}
